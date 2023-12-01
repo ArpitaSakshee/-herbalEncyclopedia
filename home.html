@@ -8,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <style>
         section{
-            
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+            margin: 1.5rem auto;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); 
+            max-width: 1500px;
         }
         header{
             text-align: center;
             max-width: 1500px;
-            max-height: auto;
+            margin-bottom: -20px;
             background-color: #f4f4f4;
             
         }
@@ -26,27 +27,44 @@
         }
         a{
             font-size: 1.75em;
-            padding: 1.5rem;
+            padding: 0 1.5rem 0px 1.5rem;
             text-decoration: none;
             flex: 1 1 50%;
             color: black;
             font-weight: 500;
-            
         }
+       
         #home-flower{
-            display: inline-block;
-            max-width: 100px;
+            position: relative;
+            top: 2rem;
+            max-width: 125px;
         }
         nav{
             display: flex;
+            justify-content: space-evenly;
+        }
+        #NavOne{
+            margin-left: 5rem;
+        }
+        #NavThree{
+            margin-right: 5rem;
+        }
+        #NavOne, #NavTwo, #NavThree{
+            display: flex;
+            align-items: center;
         }
         article{
             max-width: 1500px;
-            max-height: auto;
             background-color: #e1ddd2;
-            /* border: 1px solid */
+        }
+        h1, h3{
+            padding: 50px
+        }
+        h1{
+            padding-top: 100px;
         }
         #jarDiv{
+            padding: 50px;
             background-image: url(img/bg.png);
             background-size: cover;
             background-position: center; 
@@ -55,11 +73,19 @@
             justify-content: space-evenly;
         }
         #jar1 img, #jar2 img, #jar3 img{
-            max-width: 100px;
+            
+            max-width: 125px;
             height: auto;
 
         }
+        #jar1{
+            margin-left: 3.3rem;
+        }
+        #jar3{
+            margin-right: 3.8rem;
+        }
         #jar1, #jar2, #jar3{
+            
             display: flex;
             flex-direction: column;
             margin-top: 0.5rem;
@@ -70,56 +96,108 @@
             text-align: center;
         }
         #learn{
-            margin: 2rem auto;
+            padding: 10px 70px;
+            font-size: 1.3em;
+            margin: 0 auto;
             display: block;
+            color: white;
+            background-color: #485353;
+            border: none;
 
         }
+        #contact{
+            display: block;
+            margin: 0 auto;
+            font-size: 1.5em;
+            padding: 10px 50px;
+            border-radius: 22px;
+            color: white;
+            background-color: #485353;
+            border: none;
+        }
         #main{
+            margin-top: -4%;
             background-image: url(img/bg.png);
             background-size: cover;
             background-position: center; 
             background-repeat: no-repeat; 
         }
+        #buttonDiv{
+            padding: 25px;
+        }
+        @media screen and (max-width: 1000px){ 
+            #main{
+                background-size: cover;
+            }
+            #home-flower{
+                max-width: 75px;
+                top: 1.25rem;
+            }
+            a{
+                font-size: 1.25em;
+                padding: 0 1rem 0px 1rem;
+            }
+        }
+        @media screen and (max-width: 700px){ 
+            #home-flower{
+                max-width: 50px;
+                top: 0.75rem;
+            }
+            a{
+                font-size: 0.9em;
+                padding: 0 0.75rem 0px 0.75rem;
+            }
+        }
+        
     </style>
 </head>
 <body>
     <section id="window">
         <header>
             <nav>
-                <a href="home.html">Home</a>
-                <a href="about.html">Encyclopedia</a>
-                <a href="home.html">
-                    <img id="home-flower" src="img/logo.png">
-                </a>
-                <a href="encyclopedia.html">About</a>
-                <a href="service.html">Service</a>
-                <a href="faq.html">FAQ</a>
+                <div id="NavOne">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">Encyclopedia</a>
+                </div>
+                <div id="NavTwo">
+                    <a href="home.html">
+                        <img id="home-flower" src="img/logo.png">
+                    </a>
+                </div>
+                <div id="NavThree">
+                    <a href="encyclopedia.html">About</a>
+                    <a href="service.html">Service</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
             </nav>
             <div id="main">
                 <h1>Welcome to Herbs Heal</h1>
                 <button id="contact">Contact Herbalist</button>
-                <h2>
+                <h3>
                     We offer expert herablist consulations leading to<br>
                     tailored remedies, based on individual insights.
                     <br><br>
                     Beyond commerce, we are commited to educate<br>
                     and empower through our herbal encyclopedia.
-                </h2>
+                </h3>
             </div>
         </header>
         <article>
-            <button id="learn">learn about herbs</button>
+            <div id="buttonDiv">
+                <button id="learn">learn about herbs</button>
+            </div>
+            
             <div id="jarDiv">
                 <div id="jar1">
-                    <img id="Ashwagandha" src="img/jars.png">
+                    <img id="Ashwagandha" src="img/jarOne.png">
                     <figcaption>Ashwagandha<br>for energy</figcaption>
                 </div>
                 <div id="jar2">
-                    <img id="Turmeric" src="img/jars copy.png">
+                    <img id="Turmeric" src="img/jarTwo.png">
                     <figcaption>Turmeric<br>for wellness</figcaption>
                 </div>
                 <div id="jar3">
-                    <img id="Brahmi" src="img/jars copy 2.png">
+                    <img id="Brahmi" src="img/jarThree.png">
                     <figcaption>Brahmi<br>for digestion</figcaption>
                 </div>
             </div>
