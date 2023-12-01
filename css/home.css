@@ -1,0 +1,141 @@
+section{
+    margin: 1.5rem auto;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); 
+    max-width: 1500px;
+}
+header{
+    text-align: center;
+    max-width: 1500px;
+    margin-bottom: -20px;
+    background-color: #f4f4f4;
+    
+}
+body{
+    font-family: sans-serif;
+    background-color: #fafafa;
+    color: black;
+    
+}
+a{
+    font-size: 1.75em;
+    padding: 0 1.5rem 0px 1.5rem;
+    text-decoration: none;
+    flex: 1 1 50%;
+    color: black;
+    font-weight: 500;
+}
+
+#home-flower{
+    position: relative;
+    top: 2rem;
+    max-width: 125px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+#NavOne{
+    margin-left: 5rem;
+}
+#NavThree{
+    margin-right: 5rem;
+}
+#NavOne, #NavTwo, #NavThree{
+    display: flex;
+    align-items: center;
+}
+article{
+    max-width: 1500px;
+    background-color: #e1ddd2;
+}
+h1, h3{
+    padding: 50px
+}
+h1{
+    padding-top: 100px;
+}
+#jarDiv{
+    padding: 50px;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: space-evenly;
+}
+#jar1 img, #jar2 img, #jar3 img{
+    
+    max-width: 125px;
+    height: auto;
+
+}
+#jar1{
+    margin-left: 3.3rem;
+}
+#jar3{
+    margin-right: 3.8rem;
+}
+#jar1, #jar2, #jar3{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+figcaption{
+    margin-top: 10%;
+    text-align: center;
+}
+#learn{
+    padding: 10px 70px;
+    font-size: 1.3em;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    background-color: #485353;
+    border: none;
+
+}
+#contact{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5em;
+    padding: 10px 50px;
+    border-radius: 22px;
+    color: white;
+    background-color: #485353;
+    border: none;
+}
+#main{
+    margin-top: -4%;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+#buttonDiv{
+    padding: 25px;
+}
+@media screen and (max-width: 1000px){ 
+    #main{
+        background-size: cover;
+    }
+    #home-flower{
+        max-width: 75px;
+        top: 1.25rem;
+    }
+    a{
+        font-size: 1.25em;
+        padding: 0 1rem 0px 1rem;
+    }
+}
+@media screen and (max-width: 700px){ 
+    #home-flower{
+        max-width: 50px;
+        top: 0.75rem;
+    }
+    a{
+        font-size: 0.9em;
+        padding: 0 0.75rem 0px 0.75rem;
+    }
+}
