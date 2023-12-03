@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'papyrus';
+  src: url('./fonts/papyrus.ttc');
+}
+@font-face {
+  font-family: 'crimson serif';
+  src: url('./fonts/CrimsonText-Regular.ttf');
+}
+
+.nav-bar-link {
+  font-weight: 600;
+  text-decoration: none;
+  color: gray;
+}
+.curr-page {
+  color: #000;
+  font-weight: 700;
+}
+
+.nav-bar {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 76px;
+  align-items: center;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: -65px;
+}
+
+.enc-container {
+  box-sizing: border-box;
+  background-image: url('img/herb-detail-bg.png');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container {
+  border-radius: 10px;
+  margin-top: 20px;
+  height: calc(90vh - 220px);
+  width: 90vw;
+  display: grid;
+  background-color: white;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  overflow-y: auto;
+}
+.product-item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  text-decoration: none;
+  font-family: 'papyrus';
+}
+.product-img {
+  height: 180;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: gray;
+  text-decoration: none;
+}
+
+#herb-image {
+  height: 220px;
+  width: 110px;
+}
+.product-detail-container {
+  border-radius: 10px;
+  margin-top: 20px;
+  height: calc(90vh - 220px);
+  width: 90vw;
+  background-color: white;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.product-detail-top {
+  padding: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+#img-box {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#herb-name {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5vh;
+  color: gray;
+  font-family: 'papyrus';
+}
+#herb-tagline {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 3vh;
+  color: gray;
+  font-family: 'papyrus';
+}
+#herb-intro {
+  font-size: 20px;
+  font-weight: 300;
+  color: gray;
+  font-family: 'criimson serif';
+}
+#herb-description {
+  font-size: 25px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-family: 'crimson serif';
+}
+
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  padding: 0 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 76px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* responsive for the containers */
+@media screen and (max-width: 600px) {
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .product-item {
+    margin: 5px;
+    font-family: 'papyrus';
+  }
+  .product-detail-top {
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  #herb-image {
+    height: 40vw;
+    width: 23vw;
+  }
+  #img-box {
+    width: 100%;
+  }
+  #herb-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #herb-tagline {
+    font-size: 15px;
+  }
+  #herb-intro {
+    font-size: 15px;
+  }
+  #herb-description {
+    font-size: 20px;
+    padding: 5vw;
+  }
+}

@@ -11,10 +11,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <script src="js/herb_detail.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/herb_detail_encyclopedia.css"
+    />
   </head>
   <body>
-    <section id="window">
-      <header>
+    <div class="enc-container">
+      <header style="width: 100vw; position: fixed; top: 0">
         <nav
           id="mobileNAV"
           class="navbar navbar-expand-lg navbar-light bg-light"
@@ -69,66 +75,24 @@
             <a href="faq.html">FAQ</a>
           </div>
         </nav>
-        <div id="main">
-          <h1 class="desktop">Welcome to Herbs Heal</h1>
-          <button id="contact">Contact Herbalist</button>
-          <h3 class="desktop">
-            We offer expert herablist consulations leading to<br />
-            tailored remedies, based on individual insights.
-            <br /><br />
-            Beyond commerce, we are commited to educate<br />
-            and empower through our herbal encyclopedia.
-          </h3>
-          <h3 class="mobile">
-            Explore the ancient world of<br />
-            herbs. Discover the healing<br />
-            power at Herbs Heal, your<br />
-            guide to holistic wellness.
-          </h3>
-        </div>
       </header>
-      <article>
-        <div id="buttonDiv">
-          <button id="learn">
-            <span class="desktop">learn about herbs</span>
-            <span class="mobileCTA">contact</span>
-          </button>
-        </div>
-
-        <div id="jarDiv">
-          <div id="jar1">
-            <img id="Ashwagandha" src="img/jarOne.png" />
-            <figcaption>
-              Ashwagandha<br /><span class="mobile">for energy</span>
-            </figcaption>
+      <div class="product-detail-container no-scrollbar">
+        <div class="product-detail-top">
+          <div id="img-box">
+            <img src="./img/jar.png" alt="jar" id="herb-image" />
           </div>
-          <div id="jar2">
-            <img class="desktop" id="Turmeric" src="img/jarTwo.png" />
-            <img
-              class="mobile"
-              width="90"
-              id="Turmeric"
-              src="img/jars copy.png"
-            />
-            <figcaption>
-              Turmeric<br /><span class="mobile">for wellness</span>
-            </figcaption>
-          </div>
-          <div id="jar3">
-            <img id="Brahmi" src="img/jarThree.png" />
-            <figcaption>
-              Brahmi<br /><span class="mobile">for digestion</span>
-            </figcaption>
+          <div>
+            <h3 id="herb-name"></h3>
+            <div id="herb-tagline"></div>
+            <div id="herb-intro"></div>
           </div>
         </div>
-        <footer>
-          <p>
-            &copy; 2023 Herbs Heal. All Rights Reserved.<br />Crafted with care
-            and tradition.
-          </p>
-        </footer>
-      </article>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <div id="herb-description"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div>© 2023 Herbs Heal. All Rights Reserved.</div>
+      <div>Crafted with care and tradition.</div>
+    </footer>
   </body>
 </html>
