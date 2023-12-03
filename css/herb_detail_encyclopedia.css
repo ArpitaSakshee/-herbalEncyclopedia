@@ -37,7 +37,7 @@
 
 .enc-container {
   box-sizing: border-box;
-  background-image: url('img/herb-detail-bg.png');
+  background-image: url('../img/herb-detail-bg.png');
   background-position: cover;
   background-repeat: no-repeat;
   background-size: cover;
