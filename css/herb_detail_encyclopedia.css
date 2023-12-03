@@ -183,6 +183,7 @@
 }
 .move-down{
   transform: translateY(150px); 
+  height: calc(90vh - 300px);
 }
 footer{
   color: black !important;
