@@ -130,6 +130,14 @@ figcaption{
 #mobileNAV{
     display: none;
 }
+#herb-list {
+    transition: transform 0.3s ease;
+}
+.move-down{
+    transform: translateY(150px); 
+}
+    
+
 
 @media screen and (max-width: 1000px){ 
     #main{
