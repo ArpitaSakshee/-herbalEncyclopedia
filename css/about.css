@@ -181,6 +181,10 @@ figcaption{
         margin-top: 0rem;
         gap: 2rem;
     }
+    #top-Mobile > h3{
+        font-family: "papyrus";
+        line-height: 1.7em;
+    }
     #top-Mobile{
         margin-top: -2.5%;
         background-image: url(../img/base.png);
@@ -188,10 +192,23 @@ figcaption{
         background-position: top; 
         background-repeat: no-repeat; 
         height: 260px;
-        margin-bottom: 2%;
+        
+    }
+    #topRight{
+        align-items: center;
     }
     #top-Mobile > h3{
         text-align: center;
+    }
+    #topRight > h2{
+        font-family: 'papyrus';
+        margin-left: 2rem;
+    }
+    #topRight > h3{
+        text-align: center;
+        font-family: 'crimson serif';
+        font-size: 1.4em !important;
+        
     }
     #main-Mobile{
         display: block;
