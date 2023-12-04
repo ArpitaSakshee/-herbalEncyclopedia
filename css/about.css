@@ -173,7 +173,7 @@ figcaption{
         display: flex;
         flex-direction: column;
         padding: 0 3rem;
-        margin: 2rem auto 1rem auto;
+        margin: 0 auto;
         
     }
     #contentTop{
@@ -346,5 +346,23 @@ figcaption{
     a{
         font-size: 0.9em;
         padding: 0 0.75rem 0px 0.75rem;
+    }
+}
+@media screen and (max-width: 500px){ 
+    /* #contentBottom{
+        padding: 0 2rem;
+    } */
+    #contentBottom > p{
+        line-height: 2.7em;
+        font-size: 1.1em;
+    } 
+    #topRight > h2{
+        font-family: 'papyrus';
+        margin-left: 1rem;
+    }
+    #topRight > h3{
+        
+        font-size: 1.1em !important;
+        
     }
 }
