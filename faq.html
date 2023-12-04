@@ -1,45 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/faq.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-<header>
-</header>
-<body>
-    <img src="img/faq.png" alt="FAQ"/>
-    <div class="gallery">
-        What is Ayurveda?
-        <div class="gallery-item"> <img src="img/avatar1.png" alt="FAQ"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="window">
+      <header>
+        <nav
+          id="mobileNAV"
+          class="navbar navbar-expand-lg navbar-light bg-light"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Herbs Heal</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="encyclopedia.html">Encyclopedia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav id="desktopNAV">
+          <div id="NavOne">
+            <a href="home.html">Home</a>
+            <a href="encyclopedia.html">Encyclopedia</a>
+          </div>
+          <div id="NavTwo">
+            <a href="home.html">
+              <img id="home-flower" src="img/logo.png" />
+            </a>
+          </div>
+          <div id="NavThree">
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </nav>
+        <div id="main">
         </div>
-        <div class="gallery-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur dolores animi dicta vitae corrupti tempora, adipisci sequi accusantium recusandae aliquam officia quam, et, nesciunt libero beatae magni obcaecati ullam.
+      </header>
+      <article>
+        <div>
+            <h3>What is Ayurveda?</h3>
+            <div class="customerBox">
+              <img src="img/avatar1.png" alt="FAQ"/>
+              <p>
+                Ayurveda is an ancient Indian system of medicine focused on using herbal remedies 
+                to balance the body, mind, and spirit.
+              </p>
+            </div>
         </div>
-    </div>
-    <div class="gallery">
-        How can herb help me ?
-        <div class="gallery-item"> <img src="img/avatar2.png" alt="FAQ"/>
+        <div>
+            <h3>How can herbs help me?</h3>
+            <div class="customerBox">
+              <img src="img/avatar2.png" alt="FAQ"/>
+              <p>
+                Herbs can support health in various ways, from boosting immunity to improving digestion.
+                <br><br>
+                Herbs support health by enhancing bodily functions, treating ailments naturally, and 
+                boosting immunity, all with minimal side effects.
+              </p>
+            </div>
         </div>
-        <div class="gallery-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cupiditate quas corporis esse beatae! Dolores provident corrupti voluptate quos saepe id, quae temporibus eaque facilis, nulla reprehenderit sed laborum veniam!
+        <div>
+            <h3>Are your herbalists certified?</h3>
+            <div class="customerBox">
+              <img src="img/avatar3.png" alt="FAQ"/>
+              <p>
+                Yes, our herbalists are professionally certified, having completed rigorous training 
+                and accreditation in herbal medicine to ensure the highest standard of care.
+              </p>
+            </div>
         </div>
-    </div>
-    <div class="gallery">
-        Are you herbalist certified ?
-        <div class="gallery-item">  <img src="img/avatar3.png" alt="FAQ"/>
-        </div>
-        <div  class="gallery-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus iure voluptas nesciunt sequi magni magnam, culpa sapiente vitae, ipsum pariatur asperiores fugiat autem. At nam voluptate tempora officia quos!
-        </div>
-    </div>
-</body>
-<footer>
-    <div>
-        &copy; 2023 Herbs heal. All Rights Reserved.
-    </div>
-    <div>
-        Crafted with care and tradition.
-    </div>
-</footer>
+        
+        <footer>
+          <p>
+            &copy; 2023 Herbs Heal. All Rights Reserved.<br />Crafted with care
+            and tradition.
+          </p>
+        </footer>
+      </article>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
