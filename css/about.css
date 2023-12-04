@@ -71,6 +71,9 @@ span.mobile{
 .mobileCTA{
     display: none;
 }
+#main-Mobile{
+    display: none;
+}
 
 
 figcaption{
@@ -140,7 +143,7 @@ figcaption{
     #contentBottom{
         max-width: 500px;
         margin: 2rem auto 10rem auto;
-    
+        
         
     }
 }
@@ -160,10 +163,55 @@ figcaption{
 }
 /* mobile view 700px */
 @media screen and (max-width: 700px){ 
+    #contentBottom > p{
+        line-height: 3em;
+        font-size: 1.3em;
+    }
+    
+    #contentBottom{
+        
+        display: flex;
+        flex-direction: column;
+        padding: 0 3rem;
+        margin: 2rem auto 1rem auto;
+        
+    }
+    #contentTop{
+        margin-left: 0rem;
+        margin-top: 0rem;
+        gap: 2rem;
+    }
+    #top-Mobile{
+        margin-top: -2.5%;
+        background-image: url(../img/base.png);
+        background-size: cover;
+        background-position: top; 
+        background-repeat: no-repeat; 
+        height: 260px;
+        margin-bottom: 2%;
+    }
+    #top-Mobile > h3{
+        text-align: center;
+    }
+    #main-Mobile{
+        display: block;
+    }
+    #main{
+        display: none;
+    }
+    #topLeft{
+        padding-top: 3rem;
+    }
+    body{
+        background-color:  #f4f4f4;
+    }
     #aboutContentDiv{
-        
-        
+        background-color: #f4f4f4;
+        max-height: 2000px;
         padding: 0rem 0;
+    }
+    #contentTop{
+        flex-direction: column;
     }
     #main{
         margin-top: -2.5%;
