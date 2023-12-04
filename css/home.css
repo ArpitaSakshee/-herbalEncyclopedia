@@ -182,8 +182,11 @@ figcaption{
         color: #485353 !important;
         text-decoration: none;
         white-space: nowrap;
-        font-family: sans-serif !important;
+        
     }
+    .navbar-brand{
+        font-family: 'papyrus' !important;
+      }
     #desktopNAV{
         display: none;
     }

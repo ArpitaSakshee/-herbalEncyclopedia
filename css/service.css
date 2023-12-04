@@ -33,6 +33,9 @@ footer {
     background-color: #485353;
     border: none;
 }
+.navbar-brand{
+    font-family: 'papyrus' !important;
+  }
 
 .item-group {
     text-align: center;

@@ -51,6 +51,10 @@
   align-items: center;
 }
 
+.navbar-brand{
+  font-family: 'papyrus' !important;
+}
+
 .product-container {
   border-radius: 10px;
   margin-top: 20px;
