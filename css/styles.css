@@ -1,5 +1,8 @@
-footer {
-    background-color: rgba(226,221,209,255);
-    text-align: center;
-    padding: 15px;
-}
+@font-face {
+    font-family: 'papyrus';
+    src: url('./fonts/papyrus.ttc');
+  }
+  @font-face {
+    font-family: 'crimson serif';
+    src: url('./fonts/CrimsonText-Regular.ttf');
+  }

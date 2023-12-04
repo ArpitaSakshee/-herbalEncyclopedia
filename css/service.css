@@ -1,0 +1,49 @@
+footer {
+    background-color: rgba(226,221,209,255);
+    text-align: center;
+    padding: 15px;
+}
+
+.star-checked {
+    color: orange;
+}
+.star-line {
+    border-bottom: 4px thick red;
+    border-top: 4px thin red;
+}
+
+.book-button{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5em;
+    padding: 10px 50px;
+    border-radius: 22px;
+    color: white;
+    background-color: #485353;
+    border: none;
+}
+
+.item-group {
+    text-align: center;
+    display: flex; 
+    flex-wrap: nowrap;
+}
+  
+.item {
+    flex-basis: 50%;
+ }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    
+.item img {
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width: 768px) {
+    /* columns for home page */
+    .item-group {
+        flex-wrap: nowrap;
+    }
+}
+  
