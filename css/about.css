@@ -359,3 +359,11 @@ footer > p{
         padding: 0 0.75rem 0px 0.75rem;
     }
 }
+@media screen and (max-width: 700px){ 
+    #contentBottom > p{
+        font-size: 1.1em;
+    }
+    #topRight > h3{
+        font-size: 1.2em !important;
+    }
+}
