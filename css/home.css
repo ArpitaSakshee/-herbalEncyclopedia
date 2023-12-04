@@ -53,7 +53,11 @@ h1, h3{
     padding: 50px
 }
 h1{
+    font-family: "papyrus";
     padding-top: 100px;
+}
+h3{
+    font-family: 'crimson serif';
 }
 
 .mobile{
@@ -96,6 +100,7 @@ span.mobile{
 figcaption{
     margin-top: 10%;
     text-align: center;
+    font-family: "papyrus";
 }
 #learn{
     padding: 10px 70px;
@@ -130,6 +135,14 @@ figcaption{
 #mobileNAV{
     display: none;
 }
+#herb-list {
+    transition: transform 0.3s ease;
+}
+.move-down{
+    transform: translateY(150px); 
+}
+    
+
 
 @media screen and (max-width: 1000px){ 
     #main{

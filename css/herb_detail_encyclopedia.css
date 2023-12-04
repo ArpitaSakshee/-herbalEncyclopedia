@@ -178,6 +178,20 @@
   flex-direction: column;
   justify-content: center;
 }
+.product-detail-container {
+  transition: transform 0.3s ease;
+}
+.move-down{
+  transform: translateY(150px); 
+  height: calc(90vh - 300px);
+}
+footer{
+  color: black !important;
+}
+#herb-list{
+  max-width: 1050px; 
+  margin: 0 auto; 
+}
 
 /* responsive for the containers */
 @media screen and (max-width: 600px) {
@@ -217,5 +231,8 @@
   #herb-description {
     font-size: 20px;
     padding: 5vw;
+  }
+  footer{
+    color: black !important;
   }
 }
