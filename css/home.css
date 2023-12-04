@@ -141,6 +141,15 @@ figcaption{
 .move-down{
     transform: translateY(150px); 
 }
+footer{
+    text-align: center;
+    background-color: #e1ddd2;
+    /* margin-top: 5rem; */
+}
+footer > p{
+    padding: 1.3rem 0;
+    font-family: 'crimson serif' !important;
+}
     
 
 
