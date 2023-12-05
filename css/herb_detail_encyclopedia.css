@@ -102,6 +102,7 @@
   width: 110px;
 }
 .product-detail-container {
+  max-width: 1300px;
   border-radius: 10px;
   margin-top: 20px;
   height: calc(90vh - 220px);
