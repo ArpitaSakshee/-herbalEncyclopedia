@@ -168,7 +168,9 @@
   padding-right: 10vw;
   font-family: 'crimson serif';
 }
-
+a > img{
+  width: 20px;
+}
 .footer {
   background-color: #e1ddd2;
   border-top: 1px solid #e5e5e5;
