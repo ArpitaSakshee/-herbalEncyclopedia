@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'papyrus';
-    src: url('./fonts/papyrus.ttc');
+    src: url('../fonts/papyrus.ttc');
   }
   @font-face {
     font-family: 'crimson serif';
-    src: url('./fonts/CrimsonText-Regular.ttf');
+    src: url('../fonts/CrimsonText-Regular.ttf');
   }
