@@ -185,6 +185,7 @@ footer > p{
         flex-direction: column;
         padding: 0 3rem;
         margin: 2rem auto 1rem auto;
+        align-items: center;
         
     }
     #contentTop{
@@ -359,11 +360,11 @@ footer > p{
         padding: 0 0.75rem 0px 0.75rem;
     }
 }
-@media screen and (max-width: 700px){ 
+@media screen and (max-width: 500px){ 
     #contentBottom > p{
-        font-size: 1.1em;
+        font-size: 0.9em !important;
     }
     #topRight > h3{
-        font-size: 1.2em !important;
+        font-size: 1em !important;
     }
 }
