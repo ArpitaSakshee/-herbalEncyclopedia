@@ -84,6 +84,7 @@ span.mobile{
     height: auto;
 
 }
+
 #jar1{
     margin-left: 3.3rem;
 }
@@ -234,6 +235,7 @@ footer > p{
         display: block;
     }
     h3.mobile{
+        font-family: "papyrus" !important;
         padding: 2.5rem 0;
     }
     #jar1, #jar2, #jar3{
