@@ -183,13 +183,13 @@ footer > p{
         
         display: flex;
         flex-direction: column;
-        padding: 0 3rem;
+        padding: 0 4rem;
         margin: 2rem auto 1rem auto;
         align-items: center;
         
     }
     #contentTop{
-        margin-left: 0rem;
+        margin-left: -1rem;
         margin-top: 0rem;
         gap: 2rem;
     }
