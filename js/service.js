@@ -2,6 +2,7 @@ var consultantList = {
     "Cecilia": {
         image: "img/avatar3.png",
         expertise: "Expertise: Herbal Remedies, Nutritional Herbalism",
+        rating: 5,
         price:"$90/Session",
         content: "Meet Cecilia, a seasoned herbalist whose passion for plant-based \
         healing is rooted in ancient traditions and modern botanical sciences. \
@@ -13,7 +14,7 @@ var consultantList = {
     "Michael": {
         image: "img/avatar1.png",
         expertise: "Expertise: Clinical Herbalist, Nutrition Therapist",
-        star: "5",
+        rating: 5,
         price:"$90/Session",
         content: "Meet Michael, an herbalist and nutrition consultant who offers individual \
         consultations and classes on cooking and herbal remedies. His approach is to help \
@@ -25,7 +26,7 @@ var consultantList = {
     "Ashley": {
         image: "img/avatar2.png",
         expertise: "Expertise: Eco Therapy Practitioner, Nutritional Guidance",
-        star: "5",
+        rating: 4,
         price:"$90/Session",
         content: "Meet Ashley, an integrative pharmacist who combines a blend of traditional \
         herbalism and wisdom as well as the latest research and knowledge on herbs and \
@@ -39,43 +40,85 @@ var consultantList = {
 function get(id) { return document.getElementById(id);}
 window.onload = setup;
 function setup() {
-    get('close').onclick= hideInfo;
+    get("close").onclick = hideInfo;
+    get("booking").onclick = bookingInfo;
+    //get("confirm-booking").onclick = orgInfo;
+    get("cancel-booking").onclick = orgInfo;
     setupConsultList();
 }
 
 function setupConsultList()
-{    var consultantContent="";
-    for (var consultantKey in consultantList) {
+{    
+    var consultantContent="";
+    var consultantKey;
+    var herbalistSelection = document.getElementById('consultant-selection');
+    for (consultantKey in consultantList) {
         var info = consultantList[consultantKey];
         consultantContent += "<div id='"+ consultantKey+ "' class='item' onclick=showInfo('"+ consultantKey +"')>";
         consultantContent += consultantKey;
-        consultantContent += '<div class="star-line"><span class="fa fa-star star-checked"><span class="fa fa-star star-checked"><span class="fa fa-star star-checked"><span class="fa fa-star star-checked"><span class="fa fa-star star-checked"></div>';
+        consultantContent += '<div class="star-line">';
+        for(let i = 0; i < 5; i++){
+            if (i<info.rating) {
+                consultantContent +='<span class="fa fa-star star-checked"></span>';
+            } else {
+                consultantContent +='<span class="fa fa-star "></span>';
+            }
+        }
+        consultantContent += '</div>';
         consultantContent += "<img src='"+ info.image + "' alt='" +
         consultantKey + "'/><br>";
         consultantContent += info.price;
         consultantContent += "</div>";
+
+        var herbalistOptions = document.createElement('option');
+        herbalistOptions.value = consultantKey;
+        herbalistOptions.innerHTML = consultantKey;
+        herbalistSelection.appendChild(herbalistOptions);
     }
     console.log(consultantContent);
-    get('consultant-list').innerHTML = consultantContent;
+    get("consultant-list").innerHTML = consultantContent;
 }
 
 function showInfo(consultantName){
-    get('consultant-list').style.display="none";
-    get('service-info').style.display="none";
-    get('consultant-info').style.display="block";
+    get("consultant-list").style.display="none";
+    get("service-info").style.display="none";
+    get("consultant-info").style.display="block";
+    get("booking-info").style.display="none";
     var info = consultantList[consultantName];
     console.log(info);
-    get('consultant-info-expertise').textContent = info.expertise;
-    get('consultant-info-name').textContent = consultantName;
-    get('consultant-info-content').textContent = info.content ;
-    get('consultant-info-image').innerHTML = "<img src='"+ info.image + "' alt='" +
-        consultantName + "'/>";
+    get("consultant-info-expertise").textContent = info.expertise;
+    get("consultant-info-name").textContent = consultantName;
+    get("consultant-info-content").textContent = info.content ;
+    var consultantRating="";
+    for(let i = 0; i < 5; i++){
+        if (i<info.rating) {
+            consultantRating +='<span class="fa fa-star star-checked"></span>';
+        } else {
+            consultantRating+='<span class="fa fa-star "></span>';
+        }
+    }
+    get("consultant-info-rating").innerHTML = consultantRating;
+    get("consultant-info-image").innerHTML = "<img src='"+ info.image
+        + "' alt='" + consultantName + "'/>";
     console.log("<img src='"+ info.image + "' alt='" +
     consultantName + "'/>")
 }
 
+function orgInfo(){
+    get("consultant-info").style.display="none";
+    get("booking-info").style.display="none";
+    get("service-info").style.display="block";
+    get("consultant-list").style.display="flex";
+}
+
 function hideInfo(){
-    get('consultant-info').style.display="none";
-    get('service-info').style.display="block";
-    get('consultant-list').style.display="flex";
+    get("consultant-info").style.display="none";
+    get("service-info").style.display="block";
+    get("consultant-list").style.display="flex";
+}
+
+function bookingInfo(){
+    get("booking-info").style.display="block";
+    get("service-info").style.display="none";
+    get("consultant-list").style.display="none";
 }
