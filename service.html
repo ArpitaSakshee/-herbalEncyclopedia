@@ -14,7 +14,7 @@
     <script src="./js/service.js"></script>
 </head>
 <body>
-  <div id="window">
+  <section id="window">
     <header>
       <nav id="mobileNAV" class="navbar navbar-expand-lg navbar-light bg-light" >
         <div class="container-fluid">
@@ -61,17 +61,47 @@
       </nav>
       <div class="service-main">
         <br>
+        <div id='booking-info'>
+          <form action="service.html" method="get">
+            <p class="service-Heading"><b>BOOK OUR HERBALIST</b></p>
+            <div class="elem-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Arpita Sakshee" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="xyz@gmail.com" required>
+            </div>
+            <div class="elem-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="408-855-5007" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div>
+            <div class="elem-group">
+              <label for="date">Booking Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="elem-group">
+              <label for="consultant-selection">Select Consultant</label>
+              <select id="consultant-selection" name="consultant" required>
+                  <option value="">Choose a Herbalist</option>
+              </select>
+            </div>
+            <div class="elem-group">
+              <label for="message">Special Herb Preference ?</label>
+              <textarea id="message" name="message" placeholder="Tell us anything that might be important like herb preference, allergies etc." required></textarea>
+            </div>
+            <div class="consultant-info-header">
+              <button type="submit" class="close-button" id='confirm-booking'>CONFIRM</button>
+              <button class="close-button" id='cancel-booking'>CANCEL</button>
+            </div>
+          </form>
+        </div>
         <div id='consultant-info'>
           <div class="consultant-info-header">
             <div id="consultant-info-image"></div>
             <div style="text-align: left;">
               <div id="consultant-info-name"></div>
-              <div class="star-line-info">
-                <span class="fa fa-star star-checked"></span>
-                <span class="fa fa-star star-checked"></span>
-                <span class="fa fa-star star-checked"></span>
-                <span class="fa fa-star star-checked"></span>
-                <span class="fa fa-star star-checked"></span>
+              <div id="consultant-info-rating" class="star-line-info">
               </div>
               <div id="consultant-info-expertise"></div>
             </div>
@@ -80,7 +110,7 @@
           <button class="close-button" id='close'>CLOSE</button>
         </div>
         <div id="service-info">
-          <p class="service-Heading"><b>BOOK OUR HERBALIST</b></p>
+          <h1 class="service-Heading">BOOK OUR HERBALIST</h1>
           <p class="service-Quote">Nature's Wisdom in Every Page</p>
           <p class="service-Content">
             Welcome to the Herbalist<br>
@@ -88,7 +118,7 @@
             herbal healing are unveild<br>
             <br>
           </p>
-          <button class="book-button">BOOK CONSULTATION</button>
+          <button id="booking" class="book-button">BOOK CONSULTATION</button>
           <br>
         </div>
         <br>
@@ -98,11 +128,11 @@
     </div>
     <footer>
       <p>
-        &copy; 2023 Herbs Heal. All Rights Reserved.<br />Crafted with care
+        &copy; 2023 Herbs Heal. All Rights Reserved.<br>Crafted with care
         and tradition.
       </p>
     </footer>
-  </div>
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
