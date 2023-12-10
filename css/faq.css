@@ -128,9 +128,17 @@ footer > p{
 .customerContainer{
     padding-bottom: 2rem;
 }
-
-
-
+#NavOne a, 
+#NavThree a{
+    text-decoration: none !important;
+}
+#NavOne a.active, 
+#NavThree a.active{
+    text-decoration: underline !important;
+}
+a.nav-link.active{
+    text-decoration: underline !important;
+}
     
 
 

@@ -206,6 +206,17 @@ input, select, textarea {
     padding: 5px;
     background-color: #f4f4f4;
 }
+#NavOne a, 
+#NavThree a{
+    text-decoration: none !important;
+}
+#NavOne a.active, 
+#NavThree a.active{
+    text-decoration: underline !important;
+}
+a.nav-link.active{
+    text-decoration: underline !important;
+}
     
 /* Mobile view*/
 @media screen and (max-width: 700px){ 
@@ -237,5 +248,11 @@ input, select, textarea {
     }
     #consultant-info-content{
     text-align: center;
+    }
+    .item-group>*:first-child {
+        margin-left: 0px;
+    }
+    .item-group>*:last-child {
+        margin-right: 0px;
     }
 }

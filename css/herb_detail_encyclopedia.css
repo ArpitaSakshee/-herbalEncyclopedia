@@ -16,7 +16,11 @@
   color: #000;
   font-weight: 700;
 }
-
+#x-image{
+  position: fixed;
+  left: calc(100vw - 12rem);
+  top: 13rem;
+}
 .nav-bar {
   background-color: #fff;
   border-bottom: 1px solid #e5e5e5;
@@ -34,7 +38,17 @@
   height: 80px;
   margin-bottom: -65px;
 }
-
+#NavOne a, 
+#NavThree a{
+    text-decoration: none !important;
+}
+#NavOne a.active, 
+#NavThree a.active{
+    text-decoration: underline !important;
+}
+a.nav-link.active{
+  text-decoration: underline !important;
+}
 .enc-container {
   max-width: 1500px;
   margin: 0 auto;

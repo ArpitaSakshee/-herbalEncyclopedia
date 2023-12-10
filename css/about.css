@@ -141,8 +141,17 @@ footer > p{
     padding: 1.3rem 0;
     font-family: 'crimson serif' !important;
 }
-    
-
+#NavOne a, 
+#NavThree a{
+    text-decoration: none !important;
+}
+#NavOne a.active, 
+#NavThree a.active{
+    text-decoration: underline !important;
+}
+a.nav-link.active{
+    text-decoration: underline !important;
+}
 
 @media screen and (max-width: 1250px){ 
     #top-flower{

@@ -16,13 +16,32 @@ body{
     color: black;
     
 }
+#learn:hover{
+    -webkit-transform: scale(1.1);
+}
+#contact:hover{
+    -webkit-transform: scale(1.1);
+}
+
 a{
     font-size: 1.75em;
     padding: 0 1.5rem 0px 1.5rem;
-    text-decoration: none !important;
+    
     flex: 1 1 50%;
     color: black !important;
     font-weight: 500;
+}
+#NavOne a, 
+#NavThree a{
+    text-decoration: none !important;
+}
+#NavOne a.active, 
+#NavThree a.active{
+    text-decoration: underline !important;
+}
+ 
+a.nav-link.active{
+    text-decoration: underline !important;
 }
 
 #home-flower{
