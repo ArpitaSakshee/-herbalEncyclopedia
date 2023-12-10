@@ -18,8 +18,7 @@
 }
 #x-image{
   position: fixed;
-  left: calc(100vw - 12rem);
-  top: 13rem;
+  
 }
 .nav-bar {
   background-color: #fff;
@@ -266,5 +265,10 @@ footer {
   }
   footer {
     color: black !important;
+  }
+  #x-image > a > img {
+    width: 15px;
+    margin-left: -1.4rem;
+    margin-top: -1.8rem;
   }
 }
