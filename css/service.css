@@ -256,3 +256,13 @@ a.nav-link.active{
         margin-right: 0px;
     }
 }
+
+@media screen and (max-width: 500px){ 
+    .consultant-info-header{
+        transform: scale(0.75);
+        justify-content: center;
+    }
+    /* #consultant-info-text{
+        transform: scale(0.6);
+    } */
+}
